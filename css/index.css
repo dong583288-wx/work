@@ -1,0 +1,174 @@
+html,
+body,
+ul,
+li,
+h1,
+h2,
+h3,
+img {
+  margin: 0;
+  padding: 0;
+}
+ul,
+li {
+  list-style: none;
+}
+header {
+  height: 0.703125rem;
+  width: 100%;
+  background-color: #fff;
+  position: relative;
+  text-align: center;
+  line-height: 0.703125rem;
+}
+header h1 {
+  font-size: 0.21875rem;
+}
+header .city {
+  float: left;
+  position: absolute;
+  left: 0.21875rem;
+  color: #ce0192;
+  line-height: 0.703125rem;
+}
+header .city i {
+  position: absolute;
+  left: 0.828125rem;
+  top: 0.296875rem;
+  border-top: 0.15625rem solid #ce0192;
+  border-left: 0.15625rem solid transparent;
+  border-right: 0.15625rem solid transparent;
+}
+header .headImg {
+  float: right;
+  position: absolute;
+  top: 0.046875rem;
+  right: 0.21875rem;
+  width: 0.34375rem;
+  height: 0.375rem;
+}
+header .headImg img {
+  width: 100%;
+  height: 100%;
+}
+main {
+  width: 100%;
+  height: 100%;
+}
+main .swipe {
+  width: 100%;
+  overflow: hidden;
+  visibility: hidden;
+  position: relative;
+  margin-bottom: 0.140625rem;
+}
+main .swipe .swipe-wrap {
+  overflow: hidden;
+  position: relative;
+}
+main .swipe li {
+  height: 3.03125rem;
+  float: left;
+  width: 100%;
+  position: relative;
+}
+main .swipe li a {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+main .swipe li a img {
+  height: 3.03125rem;
+  width: 100%;
+}
+main nav {
+  height: 3.8125rem;
+  width: 100%;
+  padding: 0 0.078125rem;
+}
+main nav a {
+  display: inline-block;
+  text-align: justify;
+}
+main nav a img {
+  width: 3.21875rem;
+  height: 1.734375rem;
+}
+main .icon {
+  height: 3.796875rem;
+  width: 100%;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+main .icon a {
+  display: block;
+  width: 2.484375rem;
+  height: 50%;
+  float: left;
+  border: 0.015625rem solid #ccc;
+  box-sizing: border-box;
+}
+main .icon a img {
+  width: 100%;
+  height: 100%;
+}
+main .icon a:nth-child(n+5) {
+  border-top: 0;
+}
+main .qzy {
+  width: 100%;
+  height: 3.515625rem;
+  background-color: #f1f1f1;
+  padding-top: 0.234375rem;
+}
+main .qzy .left {
+  width: 50%;
+  height: 100%;
+  float: left;
+  border-bottom: 0.015625rem solid #ccc;
+  border-right: 0.015625rem solid #ccc;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+main .qzy .left a {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+main .qzy .left a img {
+  width: 100%;
+  height: 100%;
+}
+main .qzy .right {
+  width: 50%;
+  height: 100%;
+  float: left;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+main .qzy .right a {
+  display: block;
+  width: 100%;
+  height: 50%;
+  border-bottom: 0.015625rem solid #ccc;
+  box-sizing: border-box;
+}
+main .qzy .right a img {
+  width: 100%;
+  height: 100%;
+}
+main .qzy .right a:last-child {
+  background-color: red;
+}
+main .hot {
+  width: 100%;
+  height: 0.78125rem;
+  background-color: #f1f1f1;
+  position: relative;
+}
+main .hot h1 {
+  font-size: 0.21875rem;
+  position: absolute;
+  top: 0.4375rem;
+  left: 0.265625rem;
+}
