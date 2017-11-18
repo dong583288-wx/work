@@ -5,13 +5,18 @@ li,
 h1,
 h2,
 h3,
-img {
+img,
+p {
   margin: 0;
   padding: 0;
+  font-size: 0;
 }
 ul,
 li {
   list-style: none;
+}
+a {
+  text-decoration: none;
 }
 header {
   height: 0.703125rem;
@@ -169,6 +174,160 @@ main .hot {
 main .hot h1 {
   font-size: 0.21875rem;
   position: absolute;
-  top: 0.4375rem;
-  left: 0.265625rem;
+  left: 0.3125rem;
+  line-height: 0.78125rem;
+}
+main .hot-content ul {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+main .hot-content li {
+  width: 100%;
+  height: 1.875rem;
+  border-top: 0.015625rem solid #ccc;
+  border-bottom: 0.015625rem solid #ccc;
+  box-sizing: border-box;
+}
+main .hot-content li a {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+main .hot-content li a img {
+  width: 100%;
+  height: 100%;
+}
+main .hot-content li:nth-child(-n+3) {
+  border-bottom: 0 none;
+}
+main .vacation {
+  width: 100%;
+  height: 100%;
+  background-color: #f1f1f1;
+}
+main .vacation .title {
+  height: 0.6875rem;
+  position: relative;
+  box-sizing: border-box;
+  overflow: hidden;
+  margin-top: 0.234375rem;
+  border-top: 0.015625rem solid #ccc;
+}
+main .vacation .title a {
+  font-size: 0.21875rem;
+  text-decoration: none;
+  color: #555;
+  line-height: 0.6875rem;
+  position: absolute;
+  padding: 0 0.3125rem;
+}
+main .vacation .title a:hover {
+  color: #d3079e;
+  border-bottom: 0.03125rem solid #d3079e;
+}
+main .vacation .title a:first-child {
+  float: left;
+  left: 2.1875rem;
+}
+main .vacation .title a:last-child {
+  float: right;
+  right: 2.1875rem;
+}
+main .vacation .one {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+main .vacation .one a {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+main .vacation .one a img {
+  width: 100%;
+  height: 4.09375rem;
+  font-size: 0;
+  vertical-align: middle;
+}
+main .vacation .one section {
+  width: 100%;
+  height: 0.9375rem;
+  padding-left: 0.078125rem;
+  box-sizing: border-box;
+  overflow: hidden;
+  border-bottom: 0.015625rem solid #ccc;
+  margin-bottom: 0.234375rem;
+  background-color: #fff;
+}
+main .vacation .one section .t1 {
+  color: #555;
+  margin-top: 0.0625rem;
+  line-height: 0.34375rem;
+  font-size: 0.15625rem;
+  box-sizing: border-box;
+}
+main .vacation .one section .t1 span:first-child {
+  color: #d3079e;
+}
+main .vacation .one section .t2 {
+  font-size: 0.21875rem;
+  box-sizing: border-box;
+  height: 0.59375rem;
+}
+main .vacation .more {
+  margin-bottom: 0.234375rem;
+  position: relative;
+}
+main .vacation .more a {
+  display: block;
+  width: 100%;
+  height: 0.46875rem;
+  text-align: center;
+  line-height: 0.46875rem;
+  background-color: #fff;
+  color: #555;
+}
+main .vacation .more a i {
+  border-left: 0.15625rem solid transparent;
+  border-right: 0.15625rem solid transparent;
+  border-top: 0.15625rem solid #ccc;
+  position: absolute;
+  top: 0.15625rem;
+  left: 6.09375rem;
+}
+footer {
+  width: 100%;
+  height: 0.46875rem;
+  background-color: #d3079e;
+  font-size: 0.21875rem;
+  position: relative;
+}
+footer .left {
+  float: left;
+  line-height: 0.46875rem;
+}
+footer .left a {
+  display: block;
+  float: left;
+  position: absolute;
+  color: #fff;
+  font-weight: 700;
+}
+footer .left a:first-child {
+  left: 0.15625rem;
+}
+footer .left a:last-child {
+  left: 1.25rem;
+}
+footer .right {
+  float: right;
+  line-height: 0.46875rem;
+}
+footer .right a {
+  display: block;
+  position: absolute;
+  right: 0.15625rem;
+  color: #fff;
+  font-weight: 700;
 }

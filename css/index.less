@@ -1,9 +1,14 @@
-html, body,ul,li,h1,h2,h3,img{
+html, body,ul,li,h1,h2,h3,img,p{
     margin: 0;
     padding: 0;
+    font-size: 0;
 }
 ul,li{
     list-style: none;
+}
+
+a {
+    text-decoration: none;
 }
 
 // 头部
@@ -201,8 +206,152 @@ nav {
         font-size: (14rem/64);
         // float: left;
         position: absolute;
-        top: (28rem/64);
-        left: (17rem/64);
+        // top: (16rem/64);
+        left: (20rem/64);
+        line-height: (50rem/64);
+    }
+}
+
+// 热门活动内容 
+.hot-content {
+    ul {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    }
+
+    li {
+        width: 100%;
+        height: (120rem/64);
+        border-top: (1rem/64) solid #ccc;
+        border-bottom: (1rem/64) solid #ccc;
+        box-sizing: border-box;
+
+        a {
+            display: block;
+            width: 100%;
+            height: 100%;
+
+            img {
+                width: 100%;
+                height: 100%;
+            }
+        }
+    }
+    li:nth-child(-n+3){
+        border-bottom: 0 none;
+    }
+}
+
+// 度假vacation
+.vacation {
+    width: 100%;
+    height: 100%;
+    background-color: #f1f1f1;
+
+    .title {
+        height: (44rem/64);
+        border-top: (1rem/64) solid #ccc;
+        position: relative;
+        box-sizing: border-box;
+        overflow: hidden;
+        margin-top: (15rem/64);
+        border-top: (1rem/64) solid #ccc;
+
+        a {
+            font-size: (14rem/64);
+            text-decoration: none;
+            color: #555;
+            line-height: (44rem/64);
+            position: absolute;
+            padding: 0 (20rem/64);
+            
+            &:hover {
+                color: #d3079e;
+                border-bottom: (2rem/64) solid #d3079e;
+            }
+        }
+        a:first-child {
+            float: left;
+            left: (140rem/64);
+        }
+        a:last-child {
+            float: right;
+            right: (140rem/64);
+        }
+    }
+
+    .one {
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+
+        a {
+            display: block;
+            width: 100%;
+            height: 100%;
+
+            img {
+            width: 100%;
+            height: (262rem/64);
+            font-size: 0;
+            vertical-align: middle;
+            }
+        }
+
+        section {
+            width: 100%;
+            height: (60rem/64);
+            padding-left: (5rem/64);
+            box-sizing: border-box;
+            overflow: hidden;
+            border-bottom: (1rem/64) solid #ccc;
+            margin-bottom: (15rem/64);
+            background-color: #fff;
+
+            .t1 {
+                color: #555;
+                margin-top: (4rem/64);
+                line-height: (22rem/64);
+                font-size: (10rem/64);
+                box-sizing: border-box;
+
+                span:first-child{
+                    color: #d3079e;
+                }
+            }
+
+            .t2 {
+                font-size: (14rem/64);
+                box-sizing: border-box;
+                // background-color: red;
+                height: (38rem/64);
+            }
+        }
+    }
+
+    .more {
+         margin-bottom: (15rem/64);
+         position: relative;
+
+        a {
+            display: block;
+            width: 100%;
+            height: (30rem/64);
+            text-align: center;
+            line-height: (30rem/64);
+            background-color: #fff;
+            color: #555;
+
+            i {
+                border-left: (10rem/64) solid transparent;
+                border-right: (10rem/64) solid transparent;
+                border-top: (10rem/64) solid #ccc;
+                position: absolute;
+                top: (10rem/64);
+                left: (390rem/64);
+            }
+            }
     }
 }
 
@@ -210,3 +359,42 @@ nav {
 
 
 // 底部
+footer {
+    width: 100%;
+    height: (30rem/64);
+    background-color: #d3079e;
+    font-size: (14rem/64);
+    position: relative;
+
+    .left {
+        float: left;
+        line-height: (30rem/64);
+
+        a {
+            display: block;
+            float: left;  
+            position: absolute; 
+            color: #fff;
+            font-weight: 700;
+        }
+
+        a:first-child {
+            left: (10rem/64);
+        }
+        a:last-child {
+            left: (80rem/64);
+        }
+    }
+
+    .right {
+        float: right;
+        line-height: (30rem/64);
+        a {
+            display: block;
+            position: absolute;
+            right: (10rem/64);
+            color: #fff;
+            font-weight: 700;
+        }
+    }
+}
